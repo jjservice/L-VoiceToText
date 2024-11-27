@@ -10,8 +10,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to right,black,black,darkblue,maroon,black,black);
     height: auto;
-    margin: 10px;
-    padding: 10px;
   }
   body.lightPlayer{
     background:linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
