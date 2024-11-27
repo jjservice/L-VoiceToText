@@ -6,21 +6,36 @@
     <title>Voice to Text Notes</title>
     <link rel="stylesheet" href="VoiceToText.css">
 </head>
-<body>
+<body class="lightPlayer">
     <div class="container">
-        <h1>Voice to Text Notes</h1>
+        <h1 class="lolli-title">LOLLIP<ion-icon name="headset-sharp" onclick="toggleClassPlayer()"></ion-icon>P</h1>
+        <h2>Voice to Text Notes</h2>
+        <select id="language-selector">
+            <option value="en-US">English (US)</option>
+            <option value="es-ES">Spanish (Spain)</option>
+            <option value="fr-FR">French</option>
+            <option value="de-DE">German</option>
+            <option value="it-IT">Italian</option>
+            <!-- Add other languages as needed -->
+        </select>
         <button id="start-button">Start Voice Recognition</button>
         <textarea id="note-input" placeholder="Your note will appear here..."></textarea>
         <button id="save-note">Save Note</button>
 
         <div id="saved-notes">
-            <h2>Saved Notes</h2>
+            <h3>Saved Notes</h3>
             <ul id="notes-list"></ul>
         </div>
-    </div>
 
-    
+        <div class="jj-title">JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></div>
+     <div class="homebtn"><a href="https://jjservice.github.io/L2/1.html">
+        <ion-icon name="home"></ion-icon></a></div>
+
+    </div>
+   
 </body>
-<script src="VoiceToText.js"></script>
+<script src="Three.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
 

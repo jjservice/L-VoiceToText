@@ -64,3 +64,12 @@ function deleteNote(index) {
 
 // Initial render of saved notes
 renderSavedNotes();
+
+///Lightsss/////
+
+function toggleClassPlayer(){
+
+    const body = document.querySelector('body');
+    body.classList.toggle('lightPlayer');
+    
+    }
