@@ -9,22 +9,27 @@
 <body class="lightPlayer">
     <div class="container">
         <h1 class="lolli-title">LOLLIP<ion-icon name="headset-sharp" onclick="toggleClassPlayer()"></ion-icon>P</h1>
-        <h2>Voice to Text Notes</h2>
+        <h2>Voice to Notes</h2>
         <select id="language-selector">
             <option value="en-US">English (US)</option>
             <option value="es-ES">Spanish (Spain)</option>
-            <option value="fr-FR">French</option>
+            <option value="fr-FR">French (France)</option>
             <option value="de-DE">German</option>
             <option value="it-IT">Italian</option>
             <!-- Add other languages as needed -->
         </select>
         <button id="start-button">Start Voice Recognition</button>
-        <textarea id="note-input" placeholder="Your note will appear here..."></textarea>
-        <button id="save-note">Save Note</button>
+        <textarea id="note-input" placeholder=".;.LOLLITA.;."></textarea>
+        <button id="save-note">Save!</button>
 
         <div id="saved-notes">
             <h3>Saved Notes</h3>
-            <ul id="notes-list"></ul>
+            <ul id="notes-list">
+            <div class="Edit-Delete-Btn">
+            <button onclick="editNote()">Edit</button>
+            <button onclick="deleteNote()">Delete</button>
+            </div>
+          </ul>
         </div>
 
         <div class="jj-title">JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></div>
@@ -34,7 +39,7 @@
     </div>
    
 </body>
-<script src="Three.js"></script>
+<script src="VoiceToText.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
