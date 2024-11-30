@@ -2,31 +2,44 @@ const startButton = document.getElementById('start-button');
 const noteInput = document.getElementById('note-input');
 const saveButton = document.getElementById('save-note');
 const notesList = document.getElementById('notes-list');
+const languageSelector = document.getElementById('language-selector');
 let editingIndex = null;  // To store index of the note being edited
+
+// Get the audio element using getElementById
+const notificationSound = document.getElementById('notification-sound');
 
 // Check if Speech Recognition is supported
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 let recognition = new SpeechRecognition();
 
+// Set initial language
 recognition.lang = 'en-US';
 recognition.continuous = false;
-recognimmediateResults = false;
+recognition.immediateResults = false;
+
+// Change language based on user selection
+languageSelector.addEventListener('change', () => {
+    recognition.lang = languageSelector.value;  // Set the language based on dropdown
+    console.log(`Speech recognition language set to: ${recognition.lang}`);
+});
 
 // Start voice recognition
 startButton.addEventListener('click', () => {
     recognition.start();
-    noteInput.placeholder = 'Listening...';
+    noteInput.placeholder = '.;.Lollita is Listening.;.';
+
+    notificationSound.play();
 });
 
 // Capture speech and convert to text
 recognition.onresult = function(event) {
     const speechResult = event.results[0][0].transcript;
     noteInput.value = speechResult;
-    noteInput.placeholder = 'Your note will appear here...';
+    noteInput.placeholder = '.;.LOLLITA NOTES.;.';
 };
 
 recognition.onerror = function(event) {
-    noteInput.placeholder = 'Error occurred. Please try again.';
+    noteInput.placeholder = 'Lollita base Error. You can try again!';
 };
 
 // Save the note to localStorage
@@ -76,8 +89,16 @@ function editNote(index) {
     let savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
     noteInput.value = savedNotes[index];  // Set the note text into the input field
     editingIndex = index;  // Set the index of the note being edited
-    noteInput.placeholder = 'Edit your note here...';
+    noteInput.placeholder = '.;.Edit your note here.;.';
 }
 
 // Initial render of saved notes
 renderSavedNotes();
+
+///Lightsss/////
+
+function toggleClassPlayer() {
+    const body = document.querySelector('body');
+    body.classList.toggle('lightPlayer');
+}
+
