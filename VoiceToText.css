@@ -240,6 +240,7 @@ body.lightPlayer li button{
     padding: 5px;
     border: 1px solid rgba(135, 206, 250, 0.281);
     border-radius: 15px;
+    transition: 1s ease-in-out;
     
 }
 body.lightPlayer #notes-list{
@@ -254,9 +255,11 @@ body.lightPlayer #notes-list{
   height: 0px;
   background-color: transparent;
   border: none;
+  transition: 1s ease-in-out;
 }
 body.lightPlayer #notes-list::-webkit-scrollbar{
  border: none;
+ transition: 1s ease-in-out;
 }
 #notes-list::-webkit-scrollbar-track{
   background-color: transparent;
@@ -266,6 +269,13 @@ body.lightPlayer #notes-list::-webkit-scrollbar{
   background-color: rgba(0, 0, 0, 0.596);
   border: 1px solid lightskyblue;
   border-radius: 50px;
+  transition: 1s ease-in-out;
+}
+body.lightPlayer #notes-list::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, 0.596);
+  border: 1px solid rgba(153, 205, 50, 0.781);
+  border-radius: 50%;
+  transition: 1s ease-in-out;
 }
 
 #notes-list::-webkit-scrollbar-thumb:hover{
@@ -278,11 +288,7 @@ body.lightPlayer #notes-list::-webkit-scrollbar-thumb:hover{
   border: 2px solid  yellowgreen;
   transition: 1s ease-in-out;
 }
-body.lightPlayer #notes-list::-webkit-scrollbar-thumb{
-  background-color: rgba(0, 0, 0, 0.596);
-  border: 1px solid rgba(153, 205, 50, 0.781);
-  border-radius: 50%;
-}
+
 
 
 #notes-list li{
