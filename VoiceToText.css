@@ -10,6 +10,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to right,black,black,darkblue,maroon,black,black);
     height: auto;
+    padding: 10px;
   }
   body.lightPlayer{
     background:linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
@@ -19,7 +20,7 @@
   .container {
     margin: 0% auto;
     width: 370px;
-    margin: 20px auto;
+    margin-top: 5px;
     background: rgba(0, 0, 0, 0.363);
     padding-left: 10px;
     padding-right: 10px;
@@ -195,8 +196,8 @@ textarea {
     text-align: center;
     text-shadow: 1px 1px 1px gold;
     width: 100%;
-    height: 150px;
-    margin: 10px 0;
+    height: 110px;
+    margin: 5px 0;
     padding: 10px;
     font-size: 16px;
     border-radius: 10px;
@@ -234,10 +235,56 @@ body.lightPlayer li button{
 #notes-list{
     margin: 0% auto;
     width: 100%;
-    margin: 0% auto;
-    
+    overflow: auto;
+    height: 20vh;
+    padding: 5px;
+    border: 1px solid rgba(135, 206, 250, 0.281);
+    border-radius: 15px;
     
 }
+body.lightPlayer #notes-list{
+  border: 1px solid rgba(90, 95, 17, 0.5);
+ 
+ 
+}
+
+
+#notes-list::-webkit-scrollbar{
+  width: 15px;
+  height: 0px;
+  background-color: transparent;
+  border: none;
+}
+body.lightPlayer #notes-list::-webkit-scrollbar{
+ border: none;
+}
+#notes-list::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+#notes-list::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, 0.596);
+  border: 1px solid lightskyblue;
+  border-radius: 50px;
+}
+
+#notes-list::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(0, 0, 255, 0.425);
+  border: 2px solid  lightskyblue;
+  
+}
+body.lightPlayer #notes-list::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(146, 11, 90, 0.596);
+  border: 2px solid  yellowgreen;
+  transition: 1s ease-in-out;
+}
+body.lightPlayer #notes-list::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, 0.596);
+  border: 1px solid rgba(153, 205, 50, 0.781);
+  border-radius: 50%;
+}
+
+
 #notes-list li{
     color: white;
     text-align: left;
@@ -248,6 +295,9 @@ body.lightPlayer li button{
     padding: 8px 5px;
     border-radius: 10px;
     border: 1px solid rgba(135, 206, 250, 0.829);
+}
+body.lightPlayer #notes-list li{
+  border: 1px solid rgba(153, 205, 50, 0.781);
 }
 body.lightPlayer #notes-list li{
   border: 1px solid rgba(153, 205, 50, 0.781);
