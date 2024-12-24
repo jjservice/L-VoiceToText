@@ -10,7 +10,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to right,black,black,darkblue,maroon,black,black);
     height: auto;
-    padding: 10px;
+  
+   
   }
   body.lightPlayer{
     background:linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
@@ -19,9 +20,9 @@
 
   .container {
     margin: 0% auto;
-    width: 370px;
-    margin-top: 15px;
+    width: 95%;
     background: rgba(0, 0, 0, 0.363);
+    margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     border: 6px solid rgba(165, 7, 39, 0.486);
@@ -326,7 +327,19 @@ details{
     cursor: pointer;
 }
 #saved-notes{
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+footer{
+  bottom: 0%;
+  position: fixed;
+
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 10px;
+  color: rgb(48, 47, 47);
+
 }
 
 body.lightPlayer #save-note{
@@ -370,7 +383,11 @@ body.lightPlayer #language-selector option{
 
 @media (min-width: 768px){
   .container {
-    min-width: 600px;
+    width: 650px;
+    height: auto;
+  }
+  textarea{
+    height: 150px;
   }
 }
 

@@ -33,11 +33,22 @@
           </ul>
         </details>
 
-        <div class="jj-title">&copysr;JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></div>
-     <div class="homebtn"><a href="https://jjservice.github.io/L2/1.html">
-        <ion-icon name="home"></ion-icon></a></div>
+        <div class="jj-title">&copy;JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></div>
+        
 
     </div>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span>Lollipop</p>
+      </footer>
+    
+      <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the element with id "currentYear" and set its content to the current year
+        document.getElementById("currentYear").textContent = currentYear;
+      </script>
    
 </body>
 <script src="two.js"></script>
