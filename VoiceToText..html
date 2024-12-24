@@ -34,21 +34,22 @@
         </details>
 
        
-        <div class="homebtn"><a href="javascript:history.back()"><ion-icon name="arrow-back-sharp"></ion-icon></a></div>
+        
 
     </div>
 
     <footer>
-        <p>&copy;<span id="currentYear"></span>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
-      </footer>
-    
-      <script>
-        // Get the current year
-        const currentYear = new Date().getFullYear();
-        
-        // Find the element with id "currentYear" and set its content to the current year
-        document.getElementById("currentYear").textContent = currentYear;
-      </script>
+      <div class="homebtn"><a href="javascript:history.back()"><ion-icon name="arrow-back-sharp"></ion-icon></a></div>
+      <p>&copy;<span id="currentYear"></span>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
+    </footer>
+  
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+      
+      // Find the element with id "currentYear" and set its content to the current year
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
    
 </body>
 <script src="two.js"></script>

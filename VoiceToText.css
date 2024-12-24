@@ -29,7 +29,7 @@
     border-radius: 40px;
     box-shadow: 0px 2px 15px lightskyblue;
     height: auto;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
     
   }
   body.lightPlayer .container{
@@ -238,7 +238,7 @@ body.lightPlayer li button{
     margin: 0% auto;
     width: 100%;
     overflow: auto;
-    height: 20vh;
+    height: 40vh;
     padding: 5px;
     border: 1px solid rgba(135, 206, 250, 0.281);
     border-radius: 15px;
@@ -382,6 +382,7 @@ body.lightPlayer #language-selector option{
   background-color: rgba(49, 1, 49, 0.856);
 }
 
+
 footer{
   margin: 0% auto;
   flex-direction: column;
@@ -409,6 +410,9 @@ footer{
 
    .homebtn{
     margin: 0% auto;
+    position: fixed;
+    left: 5px;
+    bottom: 0px;
     border-bottom: 1px solid gold;
     box-shadow: 0px 2px 6px blue;
     background-image: url(MusicGig.gif);
@@ -421,6 +425,7 @@ footer{
     padding: 2px 0px;
     opacity: 80%;
     margin-bottom: 5px;
+    cursor: pointer;
   
   }
   .homebtn ion-icon{
@@ -447,13 +452,13 @@ footer{
 
 @media (min-width: 768px){
   .container {
-    width: 650px;
-    height: auto;
-    margin-bottom: 45px;
+    width: 600px;
+    margin-bottom: 55px;
   }
   textarea{
     height: 150px;
   }
+ 
 }
 
 
