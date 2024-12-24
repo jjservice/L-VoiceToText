@@ -29,7 +29,7 @@
     border-radius: 40px;
     box-shadow: 0px 2px 15px lightskyblue;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     
   }
   body.lightPlayer .container{
@@ -386,6 +386,7 @@ body.lightPlayer #language-selector option{
   .container {
     width: 650px;
     height: auto;
+    margin-bottom: 45px;
   }
   textarea{
     height: 150px;
