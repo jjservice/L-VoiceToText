@@ -238,7 +238,7 @@ body.lightPlayer li button{
     margin: 0% auto;
     width: 100%;
     overflow: auto;
-    height: 40vh;
+    height: 20vh;
     padding: 5px;
     border: 1px solid rgba(135, 206, 250, 0.281);
     border-radius: 15px;
@@ -458,6 +458,10 @@ footer{
   textarea{
     height: 150px;
   }
+  #notes-list{
+    min-height: 40vh;
+    
+}
  
 }
 
