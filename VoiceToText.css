@@ -330,6 +330,15 @@ details{
 #saved-notes{
   margin-bottom: 25px;
 }
+#saved-notes ion-icon{
+  color: rgba(245, 222, 179, 0.589);
+  font-size: 35px;
+}
+#saved-notes ion-icon:hover{
+  transform: scale(1.10);
+  transition: 0.5s;
+  color: rgba(255, 217, 0, 0.884);
+}
 footer{
   bottom: 0%;
   position: fixed;
